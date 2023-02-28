@@ -1,0 +1,37 @@
+ALGORITHM leng_of_he_sentence
+VAR
+    str: STRING:"Welcome to GoMyCode" ;
+    count: INTEGER :=0 ;
+BEGIN
+    FOR i FROM 0 TO str.length DO
+        IF (str.CharAt[i] != " ") THEN
+            count ++ ;
+        END_IF
+    END_FOR
+    write(count)
+END
+ALGORITHM num_of_words_in_the_sentence
+VAR
+    str: STRING: "WE ARE THE BEST IN THE WORLD" ;
+    count: INTEGER:=1 ;
+BEGIN
+    FOR i in str DO
+    IF (str.CharAt[i]==" " ) THEN
+        count ++ ;
+    END_IF
+    write(count)
+END
+ALGORITHM nb_of_vowls_in_sentence
+VAR
+    str: STRING: "we are the best in the world" ;
+    vowels = CHAR ['a', 'e', 'i', 'o', 'u', 'y'] ;
+    count= INTEGER:=0 ;
+BEGIN
+        FOR i in str DO
+            IF (i in vowels) THEN
+                count: ++ ;
+            END_IF
+                nb_vowls=count
+        END_FOR
+        Write(nb_vowls)
+END
